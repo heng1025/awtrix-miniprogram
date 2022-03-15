@@ -10,3 +10,6 @@
   <img width="150" src="screenshots/notify.jpeg" alt="notify">
   <img width="150" src="screenshots/music.jpeg" alt="music">
 </p>
+
+## usage
+- change `config.ts` replace `AWTRIX_HOST` with your awtrix server
