@@ -1,0 +1,14 @@
+{
+  "name": "awtrix",
+  "version": "1.0.0",
+  "description": "awtrix wechat miniprogram",
+  "keywords": [
+    "awtrix",
+    "http client"
+  ],
+  "author": "iron",
+  "license": "MIT",
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.4.5"
+  }
+}

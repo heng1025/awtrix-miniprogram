@@ -1,0 +1,3 @@
+<view class="play-list">
+  <view class="play-item {{currentSound===item?'play-item-active':''}}" wx:for="{{sounds}}" wx:key="index" data-soundfile="{{index + 200}}" data-name="{{item}}" bindtap="playMusic">{{item}}</view>
+</view>

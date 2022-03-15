@@ -1,0 +1,34 @@
+<view class="status">
+  <view class="uptime {{!powerState?'feature-disabled':''}}">
+    <view>Controller 运行时间</view>
+    <view class="feature-val">{{uptime}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>温度</view>
+    <view class="feature-val">{{matrixInfo.Temp}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>湿度</view>
+    <view class="feature-val">{{matrixInfo.Hum}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>wifi 名称</view>
+    <view class="feature-val">{{matrixInfo.wifissid}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>wifi 信号强度</view>
+    <view class="feature-val">{{matrixInfo.wifiquality}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>版本</view>
+    <view class="feature-val">{{matrixInfo.version}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>延迟</view>
+    <view class="feature-val">{{matrixInfo.latency}}</view>
+  </view>
+  <view class="feature {{!powerState?'feature-disabled':''}}">
+    <view>运行状态</view>
+    <view class="feature-val">{{powerState ? "开机" : "关机"}}</view>
+  </view>
+</view>

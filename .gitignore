@@ -1,0 +1,23 @@
+
+# dependencies
+**/node_modules
+**/miniprogram_npm
+
+# editor
+.idea
+.DS_Store
+.kaitian
+
+# misc
+npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# visual studio code
+.vscode
+.history
+*.log
+functions/*
+.temp/**
+
+.eslintcache

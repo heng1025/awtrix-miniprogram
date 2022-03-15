@@ -1,0 +1,38 @@
+.title {
+  margin-bottom: 18rpx;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.controls {
+  margin-bottom: 20rpx;
+  border-bottom: 4rpx solid #666;
+}
+.btns {
+  display: flex;
+  align-items: center;
+}
+.btns button {
+  margin-left: 14rpx;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+}
+.switch-container,
+.picker-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.picker-container {
+  height: 62rpx;
+}
+
+.picker-container .picker {
+  min-width: 80rpx;
+}
+
+.setting-slide {
+  margin-bottom: 20rpx;
+}

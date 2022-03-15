@@ -1,0 +1,48 @@
+<view class="controls">
+  <view class="title">基本控制</view>
+  <view class="switch-container">
+    <view>开/关</view>
+    <switch checked="{{powerState}}" color="#1f91f3" bindchange="controlChange" />
+  </view>
+  <view class="picker-container">
+    <view>切换 App</view>
+    <picker class="picker" value="{{appIdx}}" range="{{appList}}" range-key="Name" bindchange="appChange">
+      <view>{{appIdx>=0 ? appList[appIdx].Name : "请选择"}}</view>
+    </picker>
+  </view>
+  <view class="picker-container">
+    <view>App 循环控制</view>
+    <view class="btns">
+      <button type="primary" size="mini" wx:for="{{appAcitons}}" wx:key="index" data-type="{{item}}" bindtap="toggleAppAction">{{item}}</button>
+    </view>
+  </view>
+</view>
+<view class="settings">
+  <view class="title">设置</view>
+  <view class="switch-container">
+    <view>自动亮度</view>
+    <switch checked="{{settings.AutoBrightness}}" color="#1f91f3" bindchange="autoBrightnessChange" />
+  </view>
+  <view class="switch-container">
+    <text>开机动画</text>
+    <switch checked="{{settings.BootAnimation}}" color="#1f91f3" data-type="BootAnimation" bindchange="settingChange" />
+  </view>
+  <view class="switch-container">
+    <text>睡眠模式</text>
+    <switch checked="{{settings.SleepMode}}" color="#1f91f3" data-type="SleepMode" bindchange="settingChange" />
+  </view>
+  <view class="picker-container">
+    <view>语言</view>
+    <picker class="picker" data-type="Language" value="{{languageIdx}}" range="{{languages}}" bindchange="languageChange">
+      <view>{{languages[languageIdx]}}</view>
+    </picker>
+  </view>
+  <view class="setting-slide">
+    <view>亮度 (%)</view>
+    <slider value="{{settings.Brightness}}" activeColor="#1f91f3" block-size="20" disabled="{{brightnessDisabled}}" data-type="Brightness" bindchange="settingChange" left-icon="cancel" right-icon="success_no_circle" show-value min="0" max="100" />
+  </view>
+  <view class="setting-slide">
+    <text>音量</text>
+    <slider value="{{settings.Volume}}" activeColor="#1f91f3" block-size="20" data-type="Volume" bindchange="settingChange" left-icon="cancel" right-icon="success_no_circle" show-value min="0" max="30" />
+  </view>
+</view>

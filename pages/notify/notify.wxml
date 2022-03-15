@@ -1,0 +1,40 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="notify-common ">
+    <view>名称</view>
+    <input name="name" value="Test Notification" placeholder="请输入通知名称" />
+  </view>
+  <view class="notify-common">
+    <view>信息</view>
+    <input name="text" value="Hello World" placeholder="请输入通知信息" />
+  </view>
+  <view class="notify-common single-line">
+    <view>强制显示</view>
+    <switch name="force" color="#1f91f3" />
+  </view>
+  <view class="notify-common single-line">
+    <view>彩虹文字</view>
+    <switch name="rainbow" color="#1f91f3" />
+  </view>
+  <view class="notify-common single-line">
+    <view>文字颜色</view>
+    <picker name="color" mode="multiSelector" bindchange="colorChange" value="{{colorIdx}}" range="{{colors}}">
+      <view style="color: rgb({{colors[0][colorIdx[0]]}},{{colors[1][colorIdx[1]]}},{{colors[2][colorIdx[2]]}})">
+        {{colors[0][colorIdx[0]]}},{{colors[1][colorIdx[1]]}},{{colors[2][colorIdx[2]]}}
+      </view>
+    </picker>
+  </view>
+  <view class="notify-common single-line">
+    <view>播放声音</view>
+    <picker name="soundfile" bindchange="soundChange" value="{{soundIdx}}" range="{{sounds}}">
+      <view class="picker">{{soundIdx>=0?sounds[soundIdx]:"请选择"}}</view>
+    </picker>
+  </view>
+  <view class="notify-common">
+    <view>重复次数</view>
+    <slider name="repeat" value="2" activeColor="#1f91f3" block-size="20" min="1" max="6" show-value></slider>
+  </view>
+  <view class="btn-area">
+    <button class="submit-btn" type="primary" formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

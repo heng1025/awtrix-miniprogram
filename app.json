@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/awtrix/awtrix",
+    "pages/setting/setting",
+    "pages/music/music",
+    "pages/notify/notify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1f91f3",
+    "backgroundColor": "#f0f0f0",
+    "list": [
+      {
+        "text": "Dashboard",
+        "pagePath": "pages/awtrix/awtrix",
+        "iconPath": "assets/dashboard.png",
+        "selectedIconPath": "assets/dashboard-active.png"
+      },
+      {
+        "text": "设置",
+        "pagePath": "pages/setting/setting",
+        "iconPath": "assets/setting.png",
+        "selectedIconPath": "assets/setting-active.png"
+      },
+      {
+        "text": "通知",
+        "pagePath": "pages/notify/notify",
+        "iconPath": "assets/notify.png",
+        "selectedIconPath": "assets/notify-active.png"
+      },
+      {
+        "text": "音乐",
+        "pagePath": "pages/music/music",
+        "iconPath": "assets/music.png",
+        "selectedIconPath": "assets/music-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

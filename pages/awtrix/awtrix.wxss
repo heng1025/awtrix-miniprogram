@@ -1,0 +1,46 @@
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature,
+.uptime {
+  width: 42%;
+  padding: 12rpx 16rpx;
+  margin: 16rpx 10rpx;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  background-color: #1f91f3;
+}
+
+.uptime {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.feature-val {
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.feature-other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  color: #fff;
+  background-color: #ad27ad;
+  margin-top: 30rpx;
+  padding: 16rpx 20rpx;
+  border-radius: 10rpx;
+}
+.feature-notify {
+  background-color: #9224ca;
+}
+.feature-music {
+  background-color: #f13896;
+}
+.feature-disabled {
+  background-color: #ccc;
+}
