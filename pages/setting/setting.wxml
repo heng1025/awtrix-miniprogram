@@ -1,9 +1,5 @@
 <view class="controls">
   <view class="title">基本控制</view>
-  <view class="switch-container">
-    <view>开/关</view>
-    <switch checked="{{powerState}}" color="#1f91f3" bindchange="controlChange" />
-  </view>
   <view class="picker-container">
     <view>切换 App</view>
     <picker class="picker" value="{{appIdx}}" range="{{appList}}" range-key="Name" bindchange="appChange">

@@ -29,6 +29,9 @@
   </view>
   <view class="feature {{!powerState?'feature-disabled':''}}">
     <view>运行状态</view>
-    <view class="feature-val">{{powerState ? "开机" : "关机"}}</view>
+    <view class="feature-val feature-other">
+      <view>{{powerState ? "开机" : "关机"}}</view>
+      <view bindtap="changePower">切换</view>
+    </view>
   </view>
 </view>

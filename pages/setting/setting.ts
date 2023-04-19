@@ -20,15 +20,11 @@ Page({
     languages: ["en", "zh-CN"],
     languageIdx: 0,
     brightnessDisabled: false,
-    powerState: false,
     appList: <AwtrixApp[]>[],
     appIdx: -1,
     appAcitons: ["back", "next", "pause", "hold"],
   },
   async onLoad() {
-    const { powerState } = await request<{ powerState: boolean }>("/basics", {
-      get: "powerState",
-    });
     const settings = await request<Setting>("/basics", {
       get: "settings",
     });
@@ -41,9 +37,9 @@ Page({
       appList,
       languageIdx: Language === "en" ? 0 : 1,
       brightnessDisabled: AutoBrightness,
-      powerState,
     });
   },
+
   async languageChange(e: CustomEvent) {
     const idx = e.detail.value;
     const { success } = await request<Success>("/settings", {
@@ -72,10 +68,6 @@ Page({
     request("/settings", {
       [type]: e.detail.value,
     });
-  },
-  controlChange(e: CustomEvent) {
-    const val = e.detail.value;
-    request("/basics", { power: val });
   },
   async appChange(e: CustomEvent) {
     const { Name } = this.data.appList[e.detail.value];

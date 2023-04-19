@@ -22,18 +22,13 @@
 
 .feature-val {
   font-weight: bold;
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 .feature-other {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60rpx;
-  color: #fff;
-  background-color: #ad27ad;
-  margin-top: 30rpx;
-  padding: 16rpx 20rpx;
-  border-radius: 10rpx;
 }
 .feature-notify {
   background-color: #9224ca;

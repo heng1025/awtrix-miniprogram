@@ -1,6 +1,6 @@
 {
   "name": "awtrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "awtrix wechat miniprogram",
   "keywords": [
     "awtrix",
@@ -9,6 +9,6 @@
   "author": "iron",
   "license": "MIT",
   "devDependencies": {
-    "miniprogram-api-typings": "^3.4.5"
+    "miniprogram-api-typings": "^3.9.1"
   }
 }

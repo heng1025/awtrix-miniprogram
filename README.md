@@ -12,4 +12,4 @@
 </p>
 
 ## usage
-- change `config.ts` replace `AWTRIX_HOST` with your awtrix server
+- change `config.ts` replace `AWTRIX_HOST` with your awtrix server,and replace `IP` with your `device ip`
